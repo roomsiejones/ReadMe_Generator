@@ -2,6 +2,41 @@
 const inquirer = require('inquirer');
 const js = require('js');
 
+// need to add a toc 
+//
+function fillREADME (res) {
+    const {title, description, installation, usage, contribution, test, license, gitHub, email} = res;
+    return `
+# ${title}
+
+## Description
+${description}
+    
+    
+## Installation
+    
+${installation}
+## Usage 
+    
+${usage}
+    
+## License
+This project is licensed under the ${license} license.
+    
+## Contributing 
+    
+${contribution}    
+## Test 
+    
+${test}   
+## Questions
+To contact me or if any questions, please email me at ${email}.
+Go to https://github.com/${gitHub} to view my github profile.    
+`
+};
+
+
+
 // user will be prompted to answer questions that will be later passed through as data to fill out a README.
 inquirer.
     prompt([

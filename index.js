@@ -1,9 +1,9 @@
 //  Includes packages needed for this application
 const inquirer = require('inquirer');
-const js = require('js');
+const fs = require('fs');
 
-// need to add a toc 
-//
+// need to add a toc and badge
+//  This is a generic readme structure to be filled in by the prompts in the terminal
 function fillREADME (res) {
     const {title, description, installation, usage, contribution, test, license, gitHub, email} = res;
     return `
@@ -87,4 +87,12 @@ inquirer.
             name: "email"
         },
 
-    ]);
+    ])
+    .then((res) => {fs.writeFile("SampleREADME.md",fillREADME(res) , function (err) {
+        if (err) {
+          console.log(err.message);
+        } else {
+          console.log("README has been created!");
+        }
+    })
+});

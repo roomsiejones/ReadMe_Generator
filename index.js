@@ -1,16 +1,19 @@
 //  Includes packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // need to add a table of contents and badge and fill in the actual license section
 //  This is a generic readme structure to be filled in by the prompts in the terminal
 function fillREADME (res) {
-    const {title, description, installation, usage, contribution, test, license, gitHub, email} = res;
+    const {title, description, installation, usage, contribution, test, license, gitHub, email, badge} = res;
     return `
 # ${title.toUppercase()}
 
 ## Description
 ${description}
+
+${badge}
  
 ## Table of Contents 
 * [Installation](#installation)
@@ -96,7 +99,7 @@ inquirer.
 
     ])
     // this will create a file called "SampleREADME.md" and use the inputs from the prompt to fill in the baseline readme file and write that entire string to the new file
-    .then((res) => {fs.writeFile("SampleREADME.md",fillREADME(res) , function (err) {
+    .then((res) => {fs.writeFile("SampleREADME.md", generateMarkdown(res) , function (err) {
         if (err) {
           console.log(err.message);
         } else {

@@ -66,7 +66,7 @@ inquirer.
         
     ])
     // this will create a file called "SampleREADME.md" and use the inputs from the prompt to fill in the baseline readme file and write that entire string to the new file
-    .then((res) => {fs.writeFileSync("SampleREADME.md", generateMarkdown(res) , function (err) {
+    .then((res) => {fs.writeFile("SampleREADME.md", generateMarkdown(res) , function (err) {
         if (err) {
           console.log(err.message);
         } else {

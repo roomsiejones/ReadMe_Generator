@@ -44,7 +44,7 @@ If you wish to make contributions, please contact me below, first.
     
 There are no tests associated with this program currently.  To see how it runs, you can view the video in this README.
 
-![Video demonstrating the usage](./resource/Untitled_ Jul 9, 2021 5_38 PM.gif)
+![Video demonstrating the usage](https://github.com/roomsiejones/ReadMe_Generator/blob/main/resource/Untitled_%20Jul%209,%202021%205_38%20PM.gif?raw=true)
 ## Questions
 To contact me or report issues, please email me at jonathonrenaud1988@gmail.com
 Go to https://github.com/RoomsieJones to view my github profile.    

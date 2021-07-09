@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// need to add a toc and badge
+// need to add a toc and badge and fill in the actual license section
 //  This is a generic readme structure to be filled in by the prompts in the terminal
 function fillREADME (res) {
     const {title, description, installation, usage, contribution, test, license, gitHub, email} = res;
@@ -88,6 +88,7 @@ inquirer.
         },
 
     ])
+    // this will create a file called "SampleREADME.md and use the inputs from the prompt to fill in the baseline readme file and write that entire string to the new file
     .then((res) => {fs.writeFile("SampleREADME.md",fillREADME(res) , function (err) {
         if (err) {
           console.log(err.message);

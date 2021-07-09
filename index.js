@@ -7,11 +7,18 @@ const fs = require('fs');
 function fillREADME (res) {
     const {title, description, installation, usage, contribution, test, license, gitHub, email} = res;
     return `
-# ${title}
+# ${title.toUppercase()}
 
 ## Description
 ${description}
-    
+ 
+## Table of Contents 
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contribution](#contribution)
+* [Tests](#test)
+* [Questions](#questions)
     
 ## Installation
     
@@ -23,7 +30,7 @@ ${usage}
 ## License
 This project is licensed under the ${license} license.
     
-## Contributing 
+## Contribution 
     
 ${contribution}    
 ## Test 

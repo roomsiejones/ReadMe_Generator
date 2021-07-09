@@ -11,8 +11,9 @@
 // function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+
+const fillREADME = require('../fillREADME');
 const fs = require('fs');
-const fillREADME = require("../index.js");
 
 function generateMarkdown(res) {
   switch (res.license) {
@@ -37,4 +38,5 @@ function ibm(info) {
 
 
 };
+
 module.exports = generateMarkdown;

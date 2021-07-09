@@ -1,8 +1,8 @@
 
-# asdf
+# Cologne
 
 ## Description
-sadf
+This is the best Cologne ever
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
@@ -16,21 +16,21 @@ sadf
     
 ## Installation
     
-sdf
+npm -i inquirer
 ## Usage 
     
-sdf
+It can be used to generate a README
     
 ## License
 This project is licensed under the mit license.
     
 ## Contribution 
     
-sdf    
+Sole Contributor    
 ## Test 
     
-sdf   
+node index.js  no actual tests available at this time   
 
 ## Questions
-To contact me or if any questions, please email me at jon@gmail.com.
-Go to https://github.com/sadf to view my github profile.    
+To contact me or if any questions, please email me at Jonathonrenaud1988@gmail.com.
+Go to https://github.com/RoomsieJones to view my github profile.    

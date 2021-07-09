@@ -5,10 +5,6 @@ const fs = require('fs');
 // const validator = require("email-validator");
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
-// need to add a table of contents and badge and fill in the actual license section
-//  This is a generic readme structure to be filled in by the prompts in the terminal
-
-
 
 
 // user will be prompted to answer questions that will be later passed through as data to fill out a README.
@@ -59,14 +55,12 @@ inquirer.
             type: "input",
             message: "Please type out your email address where you can be contacted.",
             name: "email",
-            
-         // Tried utilizing a vaildate function, but because of the early exit, we never get the consolelog call?
-         // It does work to ensure the user inputs an email, but as mentioned something goes wrong    
-        //     validate: function(email)
-        // {
-        //     // Regex mail check (return true if valid mail)
-        //     return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
-        // }
+            // vailidate the input to make sure the input was an email
+            validate: function(email)
+        {
+            // Regex mail check (return true if valid mail)
+            return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
+        }
         
         },
         

@@ -1,3 +1,5 @@
+//  This is a generic readme structure to be filled in by the prompts in the terminal
+
 function fillREADME (res) {
     const {title, description, installation, usage, contribution, test, license, gitHub, email, badge} = res;
     return `

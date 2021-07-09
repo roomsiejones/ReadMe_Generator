@@ -4,10 +4,10 @@ const fillREADME = require('../fillREADME');
 
 function generateMarkdown(res) {
   switch (res.license) {
-      case "mit":
+      case "MIT":
       mit(res);
       break;
-      case "ibm":
+      case "IBM":
       ibm(res);
       break;
   }

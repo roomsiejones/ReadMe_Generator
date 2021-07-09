@@ -4,11 +4,11 @@ function fillREADME (res) {
     const {title, description, installation, usage, contribution, test, license, gitHub, email, badge} = res;
     return `
 # ${title}
-
+  ${badge}
 ## Description
 ${description}
 
-${badge}
+
  
 ## Table of Contents 
 * [Installation](#installation)

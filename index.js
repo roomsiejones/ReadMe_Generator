@@ -12,7 +12,7 @@ inquirer.
     prompt([
         {
             type: "input",
-            message: "What would you like the title of your README to be?",
+            message: "What would you like the title of your README to be? - If you want capitalization, use it.",
             name: "title"
         },
         {
@@ -44,7 +44,7 @@ inquirer.
             type: "list",
             message: "Please select a licensing to use for your README?",
             name: "license",
-            choices: ["mit" , "ibm"] 
+            choices: ["MIT" , "IBM"] 
         },
         {
             type: "input",
